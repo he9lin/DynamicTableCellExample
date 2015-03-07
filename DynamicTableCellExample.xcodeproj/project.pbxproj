@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FD38280A1AAAE53B009545AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3828091AAAE53B009545AD /* AppDelegate.swift */; };
-		FD38280C1AAAE53B009545AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38280B1AAAE53B009545AD /* ViewController.swift */; };
 		FD38280F1AAAE53B009545AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD38280D1AAAE53B009545AD /* Main.storyboard */; };
 		FD3828111AAAE53B009545AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3828101AAAE53B009545AD /* Images.xcassets */; };
 		FD3828141AAAE53B009545AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3828121AAAE53B009545AD /* LaunchScreen.xib */; };
 		FD3828201AAAE53B009545AD /* DynamicTableCellExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38281F1AAAE53B009545AD /* DynamicTableCellExampleTests.swift */; };
+		FD38282A1AAAE770009545AD /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3828291AAAE770009545AD /* DynamicTableViewController.swift */; };
+		FD38282C1AAAE871009545AD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38282B1AAAE871009545AD /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		FD3828041AAAE53B009545AD /* DynamicTableCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicTableCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3828081AAAE53B009545AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3828091AAAE53B009545AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD38280B1AAAE53B009545AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD38280E1AAAE53B009545AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD3828101AAAE53B009545AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD3828131AAAE53B009545AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD3828191AAAE53B009545AD /* DynamicTableCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicTableCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD38281E1AAAE53B009545AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD38281F1AAAE53B009545AD /* DynamicTableCellExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableCellExampleTests.swift; sourceTree = "<group>"; };
+		FD3828291AAAE770009545AD /* DynamicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewController.swift; sourceTree = "<group>"; };
+		FD38282B1AAAE871009545AD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				FD3828091AAAE53B009545AD /* AppDelegate.swift */,
-				FD38280B1AAAE53B009545AD /* ViewController.swift */,
 				FD38280D1AAAE53B009545AD /* Main.storyboard */,
 				FD3828101AAAE53B009545AD /* Images.xcassets */,
 				FD3828121AAAE53B009545AD /* LaunchScreen.xib */,
 				FD3828071AAAE53B009545AD /* Supporting Files */,
+				FD3828291AAAE770009545AD /* DynamicTableViewController.swift */,
+				FD38282B1AAAE871009545AD /* CustomTableViewCell.swift */,
 			);
 			path = DynamicTableCellExample;
 			sourceTree = "<group>";
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD38280C1AAAE53B009545AD /* ViewController.swift in Sources */,
+				FD38282A1AAAE770009545AD /* DynamicTableViewController.swift in Sources */,
+				FD38282C1AAAE871009545AD /* CustomTableViewCell.swift in Sources */,
 				FD38280A1AAAE53B009545AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				FD3828251AAAE53B009545AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD3828261AAAE53B009545AD /* Build configuration list for PBXNativeTarget "DynamicTableCellExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				FD3828281AAAE53B009545AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

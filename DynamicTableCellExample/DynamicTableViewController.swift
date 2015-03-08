@@ -59,7 +59,7 @@ class DynamicTableViewController: UITableViewController {
     reloadMessages()
   }
   
-  @IBAction func handleRefresh (sender : AnyObject?) {
+  @IBAction func handleRefresh(sender: AnyObject?) {
     reloadMessages()
     refreshControl!.endRefreshing()
   }

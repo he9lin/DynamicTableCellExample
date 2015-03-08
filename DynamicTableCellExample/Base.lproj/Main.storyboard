@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ACT-Iz-1Rk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -114,8 +115,6 @@
                                             <exclude reference="WLZ-uE-eIZ"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="3Tt-8d-lqs"/>
-                                            <exclude reference="hLG-jj-7OQ"/>
                                             <exclude reference="FmO-Mr-0lF"/>
                                             <exclude reference="FvR-EW-ZAT"/>
                                             <exclude reference="HV4-OA-yz6"/>
@@ -125,6 +124,8 @@
                                             <exclude reference="dec-Y4-wL3"/>
                                             <exclude reference="f1J-5c-9aG"/>
                                             <exclude reference="zCg-fh-NaD"/>
+                                            <exclude reference="3Tt-8d-lqs"/>
+                                            <exclude reference="hLG-jj-7OQ"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -134,8 +135,6 @@
                                             <include reference="WLZ-uE-eIZ"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="3Tt-8d-lqs"/>
-                                            <include reference="hLG-jj-7OQ"/>
                                             <include reference="FmO-Mr-0lF"/>
                                             <exclude reference="FvR-EW-ZAT"/>
                                             <include reference="HV4-OA-yz6"/>
@@ -145,6 +144,8 @@
                                             <include reference="dec-Y4-wL3"/>
                                             <include reference="f1J-5c-9aG"/>
                                             <include reference="zCg-fh-NaD"/>
+                                            <include reference="3Tt-8d-lqs"/>
+                                            <include reference="hLG-jj-7OQ"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

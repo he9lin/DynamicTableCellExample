@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ACT-Iz-1Rk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ACT-Iz-1Rk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -54,20 +54,41 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-8q-lim">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Content" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-8q-lim">
                                             <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLZ-uE-eIZ" userLabel="Avatar">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="G0f-NX-QF4"/>
+                                                <constraint firstAttribute="height" constant="50" id="l1W-S5-BtI"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="G0f-NX-QF4"/>
+                                                    <exclude reference="l1W-S5-BtI"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="G0f-NX-QF4"/>
+                                                    <include reference="l1W-S5-BtI"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="WLZ-uE-eIZ" firstAttribute="top" secondItem="26X-7G-gPN" secondAttribute="topMargin" constant="8" id="3Tt-8d-lqs"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="SFk-iZ-0qv" secondAttribute="trailing" id="FmO-Mr-0lF">
                                             <variation key="widthClass=compact" constant="2"/>
                                         </constraint>
                                         <constraint firstItem="SFk-iZ-0qv" firstAttribute="leading" secondItem="26X-7G-gPN" secondAttribute="leadingMargin" id="FvR-EW-ZAT">
-                                            <variation key="widthClass=compact" constant="2"/>
+                                            <variation key="widthClass=compact" constant="60"/>
                                         </constraint>
+                                        <constraint firstItem="SFk-iZ-0qv" firstAttribute="leading" secondItem="WLZ-uE-eIZ" secondAttribute="trailing" constant="10" id="HV4-OA-yz6"/>
                                         <constraint firstItem="SFk-iZ-0qv" firstAttribute="top" secondItem="26X-7G-gPN" secondAttribute="topMargin" id="VzS-WN-lwa">
                                             <variation key="widthClass=compact" constant="8"/>
                                         </constraint>
@@ -75,7 +96,7 @@
                                             <variation key="widthClass=compact" constant="8"/>
                                         </constraint>
                                         <constraint firstItem="bGa-8q-lim" firstAttribute="leading" secondItem="26X-7G-gPN" secondAttribute="leadingMargin" id="a2N-ea-SzP">
-                                            <variation key="widthClass=compact" constant="2"/>
+                                            <variation key="widthClass=compact" constant="60"/>
                                         </constraint>
                                         <constraint firstItem="bGa-8q-lim" firstAttribute="top" secondItem="SFk-iZ-0qv" secondAttribute="bottom" id="dec-Y4-wL3">
                                             <variation key="widthClass=compact" constant="8"/>
@@ -83,39 +104,52 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="bGa-8q-lim" secondAttribute="trailing" id="f1J-5c-9aG">
                                             <variation key="widthClass=compact" constant="2"/>
                                         </constraint>
+                                        <constraint firstItem="WLZ-uE-eIZ" firstAttribute="leading" secondItem="26X-7G-gPN" secondAttribute="leadingMargin" id="hLG-jj-7OQ"/>
+                                        <constraint firstItem="bGa-8q-lim" firstAttribute="leading" secondItem="WLZ-uE-eIZ" secondAttribute="trailing" constant="10" id="zCg-fh-NaD"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="SFk-iZ-0qv"/>
                                             <exclude reference="bGa-8q-lim"/>
+                                            <exclude reference="WLZ-uE-eIZ"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="3Tt-8d-lqs"/>
+                                            <exclude reference="hLG-jj-7OQ"/>
                                             <exclude reference="FmO-Mr-0lF"/>
                                             <exclude reference="FvR-EW-ZAT"/>
+                                            <exclude reference="HV4-OA-yz6"/>
                                             <exclude reference="VzS-WN-lwa"/>
                                             <exclude reference="YQy-Qf-SuK"/>
                                             <exclude reference="a2N-ea-SzP"/>
                                             <exclude reference="dec-Y4-wL3"/>
                                             <exclude reference="f1J-5c-9aG"/>
+                                            <exclude reference="zCg-fh-NaD"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="SFk-iZ-0qv"/>
                                             <include reference="bGa-8q-lim"/>
+                                            <include reference="WLZ-uE-eIZ"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="3Tt-8d-lqs"/>
+                                            <include reference="hLG-jj-7OQ"/>
                                             <include reference="FmO-Mr-0lF"/>
-                                            <include reference="FvR-EW-ZAT"/>
+                                            <exclude reference="FvR-EW-ZAT"/>
+                                            <include reference="HV4-OA-yz6"/>
                                             <include reference="VzS-WN-lwa"/>
                                             <include reference="YQy-Qf-SuK"/>
-                                            <include reference="a2N-ea-SzP"/>
+                                            <exclude reference="a2N-ea-SzP"/>
                                             <include reference="dec-Y4-wL3"/>
                                             <include reference="f1J-5c-9aG"/>
+                                            <include reference="zCg-fh-NaD"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="avatar" destination="WLZ-uE-eIZ" id="axS-xW-RZq"/>
                                     <outlet property="content" destination="bGa-8q-lim" id="4LL-iV-31b"/>
                                     <outlet property="title" destination="SFk-iZ-0qv" id="5lm-7v-jG0"/>
                                 </connections>
